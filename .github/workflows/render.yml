@@ -32,6 +32,8 @@ jobs:
         run: |
           npm ci
           npm run generate_docs
+      - name: Rename output folder
+        run: |
           mv public docs
       - name: Push changes
         run: |
